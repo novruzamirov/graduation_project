@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+</head>
+<body>
+    <h1>Admin Panel</h1>
+		<form action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data">
+		    <input type="file" name="file">
+		    <input type="submit">
+		</form>
+
+    <a href="/downloads">View Files</a>
+</body>
+</html>
